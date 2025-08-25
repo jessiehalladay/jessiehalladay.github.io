@@ -119,9 +119,11 @@ figcaption {
 	color: rgb(96, 96, 96);
 }
 
-@media only screen and (min-width: 40em) {
-
+@media only screen and (min-width: 50em) {
+ header, h2, p {
+    margin: 0.2rem 0 0;
 }
+
 nav ul li {
 	display: inline;
 	margin-right: 1em;
@@ -131,20 +133,15 @@ figcaption {
 	margin: .2rem 0 1em;
 }
 
-header, h2, p {
-	margin: .2rem 0 0;
-}
-
 @media only screen and (min-width: 60em) {
-    
+div.home-container {
+	max-width: 80em;
+	padding: 0 1em;
+	display: grid;
+	grid-template-columns: 3fr 1fr;
+	grid-gap: 1em;
+
 }
-	div.home-container {
-		max-width: 80em;
-		padding: 0 1em;
-		display: grid;
-		grid-template-columns: 3fr 1fr;
-		grid-gap: 1em;
-	}
 
 div.container {
 	max-width: 60em;
